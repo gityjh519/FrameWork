@@ -221,13 +221,31 @@ extension Locale {
 // MARK: - String 字符串
 extension String {
     
+    var namePath: String {
+        let document = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true)[0];
+        return document + "/\(self)";
+    }
+    var namePathURL: URL {
+        return URL(fileURLWithPath: namePath);
+    }
+    
+    var documentPath: String {
+        return String.documentPath + "/" + self + "/";
+    }
+    var libraryPath: String {
+        return String.libraryPath + "/" + self + "/";
+    }
+    
+    static let documentPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0];
+    static let libraryPath = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true)[0];
+    
     var isPhone: Bool {
         let regex = "^1[3578][0-9]{9}$";
         let predicate = NSPredicate(format: "SELF MATCHES %@", regex);
         return predicate.evaluate(with:self);
     }
     
-    var MD5String: String {
+    var MD5: String {
         let cStrl = cString(using: String.Encoding.utf8);
         let buffer = UnsafeMutablePointer<UInt8>.allocate(capacity: 16);
         CC_MD5(cStrl, CC_LONG(strlen(cStrl!)), buffer);
@@ -238,6 +256,11 @@ extension String {
         }
         free(buffer);
         return md5String;
+    }
+    
+
+    var realText: String? {
+        return count > 0 ? self : nil;
     }
     
     var textPinYin: String {

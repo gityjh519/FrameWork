@@ -12,6 +12,37 @@
 		F72D880322488290005C9437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72D880122488290005C9437 /* Main.storyboard */; };
 		F72D880522488292005C9437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72D880422488292005C9437 /* Assets.xcassets */; };
 		F72D880822488292005C9437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72D880622488292005C9437 /* LaunchScreen.storyboard */; };
+		F7E02472239E4ADA007310C8 /* image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F7E02450239E4ADA007310C8 /* image.jpeg */; };
+		F7E02473239E4ADA007310C8 /* InputTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02451239E4ADA007310C8 /* InputTextViewController.swift */; };
+		F7E02474239E4ADA007310C8 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02453239E4ADA007310C8 /* TableController.swift */; };
+		F7E02475239E4ADA007310C8 /* FunConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02454239E4ADA007310C8 /* FunConfig.swift */; };
+		F7E02476239E4ADA007310C8 /* TransitionManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02458239E4ADA007310C8 /* TransitionManger.swift */; };
+		F7E02477239E4ADA007310C8 /* PopBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02459239E4ADA007310C8 /* PopBaseViewController.swift */; };
+		F7E02478239E4ADA007310C8 /* CurrentModelContontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0245A239E4ADA007310C8 /* CurrentModelContontroller.swift */; };
+		F7E02479239E4ADA007310C8 /* JHSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0245B239E4ADA007310C8 /* JHSBaseViewController.swift */; };
+		F7E0247A239E4ADA007310C8 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0245C239E4ADA007310C8 /* BaseController.swift */; };
+		F7E02480239E4ADA007310C8 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02464239E4ADA007310C8 /* BaseModel.swift */; };
+		F7E02481239E4ADA007310C8 /* FMBaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02466239E4ADA007310C8 /* FMBaseCollectionView.swift */; };
+		F7E02482239E4ADA007310C8 /* FMScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02467239E4ADA007310C8 /* FMScrollView.swift */; };
+		F7E02483239E4ADA007310C8 /* BlurModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02468239E4ADA007310C8 /* BlurModelView.swift */; };
+		F7E02484239E4ADA007310C8 /* FMBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02469239E4ADA007310C8 /* FMBaseTableView.swift */; };
+		F7E02485239E4ADA007310C8 /* DefineSwiftFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0246B239E4ADA007310C8 /* DefineSwiftFunc.swift */; };
+		F7E02486239E4ADA007310C8 /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0246C239E4ADA007310C8 /* ExtensionView.swift */; };
+		F7E02487239E4ADA007310C8 /* AppDelegateExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0246D239E4ADA007310C8 /* AppDelegateExtenstion.swift */; };
+		F7E02488239E4ADA007310C8 /* AppExtenConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0246E239E4ADA007310C8 /* AppExtenConfig.swift */; };
+		F7E02489239E4ADA007310C8 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02470239E4ADA007310C8 /* DataBaseManager.swift */; };
+		F7E0248A239E4ADA007310C8 /* DetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02471239E4ADA007310C8 /* DetialViewController.swift */; };
+		F7E02497239E4C23007310C8 /* TaskRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0248C239E4C23007310C8 /* TaskRequest.swift */; };
+		F7E02498239E4C23007310C8 /* RequestImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0248D239E4C23007310C8 /* RequestImageView.swift */; };
+		F7E02499239E4C23007310C8 /* ThreadManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0248E239E4C23007310C8 /* ThreadManger.swift */; };
+		F7E0249A239E4C23007310C8 /* TaskRequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0248F239E4C23007310C8 /* TaskRequestOperation.swift */; };
+		F7E0249B239E4C23007310C8 /* BaseRequestTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02490239E4C23007310C8 /* BaseRequestTask.swift */; };
+		F7E0249C239E4C23007310C8 /* TaskRequestList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02491239E4C23007310C8 /* TaskRequestList.swift */; };
+		F7E0249D239E4C23007310C8 /* TaskRequestSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02492239E4C23007310C8 /* TaskRequestSetting.swift */; };
+		F7E0249E239E4C23007310C8 /* HttpParamterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02493239E4C23007310C8 /* HttpParamterModel.swift */; };
+		F7E024A0239E4C23007310C8 /* RequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02495239E4C23007310C8 /* RequestOperation.swift */; };
+		F7E024A1239E4C23007310C8 /* UserRequestExten.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E02496239E4C23007310C8 /* UserRequestExten.swift */; };
+		F7E024A3239E4CA2007310C8 /* DataFileManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E024A2239E4CA2007310C8 /* DataFileManger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +53,38 @@
 		F72D880422488292005C9437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F72D880722488292005C9437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F72D880922488292005C9437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7E02450239E4ADA007310C8 /* image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpeg; sourceTree = "<group>"; };
+		F7E02451239E4ADA007310C8 /* InputTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTextViewController.swift; sourceTree = "<group>"; };
+		F7E02452239E4ADA007310C8 /* Bridging_Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridging_Swift.h; sourceTree = "<group>"; };
+		F7E02453239E4ADA007310C8 /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
+		F7E02454239E4ADA007310C8 /* FunConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunConfig.swift; sourceTree = "<group>"; };
+		F7E02458239E4ADA007310C8 /* TransitionManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManger.swift; sourceTree = "<group>"; };
+		F7E02459239E4ADA007310C8 /* PopBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopBaseViewController.swift; sourceTree = "<group>"; };
+		F7E0245A239E4ADA007310C8 /* CurrentModelContontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentModelContontroller.swift; sourceTree = "<group>"; };
+		F7E0245B239E4ADA007310C8 /* JHSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHSBaseViewController.swift; sourceTree = "<group>"; };
+		F7E0245C239E4ADA007310C8 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		F7E02464239E4ADA007310C8 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		F7E02466239E4ADA007310C8 /* FMBaseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMBaseCollectionView.swift; sourceTree = "<group>"; };
+		F7E02467239E4ADA007310C8 /* FMScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMScrollView.swift; sourceTree = "<group>"; };
+		F7E02468239E4ADA007310C8 /* BlurModelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurModelView.swift; sourceTree = "<group>"; };
+		F7E02469239E4ADA007310C8 /* FMBaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMBaseTableView.swift; sourceTree = "<group>"; };
+		F7E0246B239E4ADA007310C8 /* DefineSwiftFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefineSwiftFunc.swift; sourceTree = "<group>"; };
+		F7E0246C239E4ADA007310C8 /* ExtensionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
+		F7E0246D239E4ADA007310C8 /* AppDelegateExtenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateExtenstion.swift; sourceTree = "<group>"; };
+		F7E0246E239E4ADA007310C8 /* AppExtenConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppExtenConfig.swift; sourceTree = "<group>"; };
+		F7E02470239E4ADA007310C8 /* DataBaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		F7E02471239E4ADA007310C8 /* DetialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetialViewController.swift; sourceTree = "<group>"; };
+		F7E0248C239E4C23007310C8 /* TaskRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRequest.swift; sourceTree = "<group>"; };
+		F7E0248D239E4C23007310C8 /* RequestImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestImageView.swift; sourceTree = "<group>"; };
+		F7E0248E239E4C23007310C8 /* ThreadManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadManger.swift; sourceTree = "<group>"; };
+		F7E0248F239E4C23007310C8 /* TaskRequestOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRequestOperation.swift; sourceTree = "<group>"; };
+		F7E02490239E4C23007310C8 /* BaseRequestTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequestTask.swift; sourceTree = "<group>"; };
+		F7E02491239E4C23007310C8 /* TaskRequestList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRequestList.swift; sourceTree = "<group>"; };
+		F7E02492239E4C23007310C8 /* TaskRequestSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRequestSetting.swift; sourceTree = "<group>"; };
+		F7E02493239E4C23007310C8 /* HttpParamterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpParamterModel.swift; sourceTree = "<group>"; };
+		F7E02495239E4C23007310C8 /* RequestOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestOperation.swift; sourceTree = "<group>"; };
+		F7E02496239E4C23007310C8 /* UserRequestExten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequestExten.swift; sourceTree = "<group>"; };
+		F7E024A2239E4CA2007310C8 /* DataFileManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFileManger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +117,13 @@
 		F72D87FC22488290005C9437 /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				F7E02452239E4ADA007310C8 /* Bridging_Swift.h */,
+				F7E02471239E4ADA007310C8 /* DetialViewController.swift */,
+				F7E02455239E4ADA007310C8 /* frameTask */,
+				F7E02454239E4ADA007310C8 /* FunConfig.swift */,
+				F7E02451239E4ADA007310C8 /* InputTextViewController.swift */,
+				F7E0244F239E4ADA007310C8 /* resource */,
+				F7E02453239E4ADA007310C8 /* TableController.swift */,
 				F72D87FD22488290005C9437 /* AppDelegate.swift */,
 				F72D87FF22488290005C9437 /* ViewController.swift */,
 				F72D880122488290005C9437 /* Main.storyboard */,
@@ -62,6 +132,111 @@
 				F72D880922488292005C9437 /* Info.plist */,
 			);
 			path = FrameWork;
+			sourceTree = "<group>";
+		};
+		F7E0244F239E4ADA007310C8 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				F7E02450239E4ADA007310C8 /* image.jpeg */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		F7E02455239E4ADA007310C8 /* frameTask */ = {
+			isa = PBXGroup;
+			children = (
+				F7E02456239E4ADA007310C8 /* controller */,
+				F7E0245D239E4ADA007310C8 /* http */,
+				F7E02463239E4ADA007310C8 /* model */,
+				F7E02465239E4ADA007310C8 /* view */,
+				F7E0246A239E4ADA007310C8 /* extenstion */,
+				F7E0246F239E4ADA007310C8 /* caches */,
+			);
+			path = frameTask;
+			sourceTree = "<group>";
+		};
+		F7E02456239E4ADA007310C8 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7E02457239E4ADA007310C8 /* pop */,
+				F7E0245B239E4ADA007310C8 /* JHSBaseViewController.swift */,
+				F7E0245C239E4ADA007310C8 /* BaseController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		F7E02457239E4ADA007310C8 /* pop */ = {
+			isa = PBXGroup;
+			children = (
+				F7E02458239E4ADA007310C8 /* TransitionManger.swift */,
+				F7E02459239E4ADA007310C8 /* PopBaseViewController.swift */,
+				F7E0245A239E4ADA007310C8 /* CurrentModelContontroller.swift */,
+			);
+			path = pop;
+			sourceTree = "<group>";
+		};
+		F7E0245D239E4ADA007310C8 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				F7E024A2239E4CA2007310C8 /* DataFileManger.swift */,
+				F7E02493239E4C23007310C8 /* HttpParamterModel.swift */,
+				F7E0248B239E4C23007310C8 /* newHttp */,
+				F7E02495239E4C23007310C8 /* RequestOperation.swift */,
+				F7E02496239E4C23007310C8 /* UserRequestExten.swift */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		F7E02463239E4ADA007310C8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F7E02464239E4ADA007310C8 /* BaseModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F7E02465239E4ADA007310C8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F7E02466239E4ADA007310C8 /* FMBaseCollectionView.swift */,
+				F7E02467239E4ADA007310C8 /* FMScrollView.swift */,
+				F7E02468239E4ADA007310C8 /* BlurModelView.swift */,
+				F7E02469239E4ADA007310C8 /* FMBaseTableView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F7E0246A239E4ADA007310C8 /* extenstion */ = {
+			isa = PBXGroup;
+			children = (
+				F7E0246B239E4ADA007310C8 /* DefineSwiftFunc.swift */,
+				F7E0246C239E4ADA007310C8 /* ExtensionView.swift */,
+				F7E0246D239E4ADA007310C8 /* AppDelegateExtenstion.swift */,
+				F7E0246E239E4ADA007310C8 /* AppExtenConfig.swift */,
+			);
+			path = extenstion;
+			sourceTree = "<group>";
+		};
+		F7E0246F239E4ADA007310C8 /* caches */ = {
+			isa = PBXGroup;
+			children = (
+				F7E02470239E4ADA007310C8 /* DataBaseManager.swift */,
+			);
+			path = caches;
+			sourceTree = "<group>";
+		};
+		F7E0248B239E4C23007310C8 /* newHttp */ = {
+			isa = PBXGroup;
+			children = (
+				F7E0248C239E4C23007310C8 /* TaskRequest.swift */,
+				F7E0248D239E4C23007310C8 /* RequestImageView.swift */,
+				F7E0248E239E4C23007310C8 /* ThreadManger.swift */,
+				F7E0248F239E4C23007310C8 /* TaskRequestOperation.swift */,
+				F7E02490239E4C23007310C8 /* BaseRequestTask.swift */,
+				F7E02491239E4C23007310C8 /* TaskRequestList.swift */,
+				F7E02492239E4C23007310C8 /* TaskRequestSetting.swift */,
+			);
+			path = newHttp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F72D880822488292005C9437 /* LaunchScreen.storyboard in Resources */,
+				F7E02472239E4ADA007310C8 /* image.jpeg in Resources */,
 				F72D880522488292005C9437 /* Assets.xcassets in Resources */,
 				F72D880322488290005C9437 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +311,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E02474239E4ADA007310C8 /* TableController.swift in Sources */,
+				F7E02488239E4ADA007310C8 /* AppExtenConfig.swift in Sources */,
 				F72D880022488290005C9437 /* ViewController.swift in Sources */,
+				F7E0249C239E4C23007310C8 /* TaskRequestList.swift in Sources */,
+				F7E0247A239E4ADA007310C8 /* BaseController.swift in Sources */,
+				F7E02484239E4ADA007310C8 /* FMBaseTableView.swift in Sources */,
+				F7E0249A239E4C23007310C8 /* TaskRequestOperation.swift in Sources */,
+				F7E024A0239E4C23007310C8 /* RequestOperation.swift in Sources */,
+				F7E0249E239E4C23007310C8 /* HttpParamterModel.swift in Sources */,
+				F7E02477239E4ADA007310C8 /* PopBaseViewController.swift in Sources */,
+				F7E02482239E4ADA007310C8 /* FMScrollView.swift in Sources */,
+				F7E02480239E4ADA007310C8 /* BaseModel.swift in Sources */,
+				F7E02478239E4ADA007310C8 /* CurrentModelContontroller.swift in Sources */,
+				F7E02475239E4ADA007310C8 /* FunConfig.swift in Sources */,
+				F7E02473239E4ADA007310C8 /* InputTextViewController.swift in Sources */,
+				F7E0248A239E4ADA007310C8 /* DetialViewController.swift in Sources */,
+				F7E02476239E4ADA007310C8 /* TransitionManger.swift in Sources */,
 				F72D87FE22488290005C9437 /* AppDelegate.swift in Sources */,
+				F7E024A3239E4CA2007310C8 /* DataFileManger.swift in Sources */,
+				F7E0249B239E4C23007310C8 /* BaseRequestTask.swift in Sources */,
+				F7E02498239E4C23007310C8 /* RequestImageView.swift in Sources */,
+				F7E02487239E4ADA007310C8 /* AppDelegateExtenstion.swift in Sources */,
+				F7E02485239E4ADA007310C8 /* DefineSwiftFunc.swift in Sources */,
+				F7E02489239E4ADA007310C8 /* DataBaseManager.swift in Sources */,
+				F7E0249D239E4C23007310C8 /* TaskRequestSetting.swift in Sources */,
+				F7E02483239E4ADA007310C8 /* BlurModelView.swift in Sources */,
+				F7E02497239E4C23007310C8 /* TaskRequest.swift in Sources */,
+				F7E02486239E4ADA007310C8 /* ExtensionView.swift in Sources */,
+				F7E02481239E4ADA007310C8 /* FMBaseCollectionView.swift in Sources */,
+				F7E024A1239E4C23007310C8 /* UserRequestExten.swift in Sources */,
+				F7E02479239E4ADA007310C8 /* JHSBaseViewController.swift in Sources */,
+				F7E02499239E4C23007310C8 /* ThreadManger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,13 +491,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FD48428QD7;
 				INFOPLIST_FILE = FrameWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huoyuan.FrameWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/yaojinhai/Desktop/newFrameWork/FrameWork/Bridging_Swift.h;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -303,13 +511,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FD48428QD7;
 				INFOPLIST_FILE = FrameWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.huoyuan.FrameWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/yaojinhai/Desktop/newFrameWork/FrameWork/Bridging_Swift.h;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

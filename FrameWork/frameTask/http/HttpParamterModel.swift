@@ -23,14 +23,15 @@ class HttpParamterModel: NSObject {
     var isData = false;
     var fileType = HttpViaType.image;
     var typeStrl: String {
-        return "Content-Type=image/png";
+        return "Content-Type:image/jpg";
     }
-
+    
+    static let bodyBoundary = "wfWiEWrgEFA9A78512weF7106A";
     
     convenience init(key: String,value: String,isBody: Bool = false) {
         self.init();
         self.key = key;
-        self.value = value;
+        self.value = value.encode;
         self.isBodyPrammter = isBody;
     }
     convenience init(key: String,valueData: Data) {
@@ -42,7 +43,28 @@ class HttpParamterModel: NSObject {
     }
     
     
-    class func getHttpBodyData(paramterList: [HttpParamterModel],bodyBoundary:String) -> Data? {
+    class func getHttpBodyJsonData(paramterList: [HttpParamterModel]) -> Data? {
+        if paramterList.count == 0 {
+            return nil;
+        }
+        var bodyParamter = [String:String]();
+        for item in paramterList {
+            if !item.isData {
+                bodyParamter[item.key] = item.value;
+            }
+        }
+        if bodyParamter.count == 0 {
+            return nil;
+        }
+        guard let jsonData = try? JSONSerialization.data(withJSONObject: bodyParamter, options: .prettyPrinted) else{
+            return nil;
+        }
+        return jsonData;
+    }
+    
+    
+    class func getHttpBodyData(paramterList: [HttpParamterModel]) -> Data? {
+        
         
         let listModel = getBodyParamter(list: paramterList, isBody: true);
         
@@ -62,12 +84,9 @@ class HttpParamterModel: NSObject {
             
             if item.isData {
                 
-//                let bodyLine = "--" + bodyBoundary + "\r\n";
-//                bodyData.append(bodyLine.data);
-//                debugDataString.append(bodyLine);
                 
                 let inputKey = """
-                Content-Disposition: form-data;name="\(item.key)";filename="\(item.key).png"\r\n\(item.typeStrl)\r\n
+                Content-Disposition: form-data;name="\(item.key)";filename="\(item.key).jpg"\r\n\(item.typeStrl)\r\n
                 """;
                 
                 bodyData.append(inputKey.data);
@@ -81,10 +100,11 @@ class HttpParamterModel: NSObject {
                 
                 bodyData.append(item.dataValue);
                 
-//                let images = UIImage(data: item.dataValue);
-//                print("images =\(images)");
-                
-                debugDataString.append(item.key);
+                if let image = UIImage(data: item.dataValue) {
+                    debugDataString.append("imageSize =\(image.size)");
+                }else{
+                    debugDataString.append("没有图片");
+                }
                 
                 bodyData.append(endFlag.data);
                 debugDataString.append(endFlag);
@@ -113,7 +133,8 @@ class HttpParamterModel: NSObject {
         
         debugDataString.append(endBound);
         
-        printObject("http body type: \n\(debugDataString)")
+        
+        printObject("数据参数：\n\(debugDataString)");
         
         
         return bodyData;
@@ -132,20 +153,20 @@ class HttpParamterModel: NSObject {
         }
         return tempList;
     }
-    class func getPairKeyAndValue(list: [HttpParamterModel]) -> String {
-        var tempStrl = "?";
-        for item in list {
-            if item.isBodyPrammter{
-                continue;
-            }
-            let valueString = item.key.encode + "=" + item.value.encode + "&";
-            tempStrl.append(valueString);
-        }
-        if tempStrl.count > 0 {
-            tempStrl = String(tempStrl.dropLast());
-        }
-        return tempStrl;
-    }
+//    class func getPairKeyAndValue(list: [HttpParamterModel]) -> String {
+//        var tempStrl = "?";
+//        for item in list {
+//            if item.isBodyPrammter{
+//                continue;
+//            }
+//            let valueString = item.key + "=" + item.value + "&";
+//            tempStrl.append(valueString);
+//        }
+//        if tempStrl.count > 0 {
+//            tempStrl = String(tempStrl.dropLast());
+//        }
+//        return tempStrl;
+//    }
     
     
     
@@ -153,3 +174,47 @@ class HttpParamterModel: NSObject {
         super.init();
     }
 }
+
+//extension String {
+//    var data: Data {
+//        return self.data(using: String.Encoding.utf8)!;
+//    }
+//    var unicodeData: Data{
+//        return data(using: String.Encoding.unicode)!;
+//    }
+//    var encode: String {
+//        return self;
+//    }
+//    var decode: String {
+//        return removingPercentEncoding ?? "";
+//    }
+//    
+//    
+//}
+
+protocol URLSchemeProtocol {
+    var url: URL? {get}
+    var urlString: String {get}
+}
+
+extension String: URLSchemeProtocol {
+    
+    var urlString: String {self}
+    var url: URL? {URL(string: self)}
+    
+}
+extension URL: URLSchemeProtocol {
+    var urlString: String {absoluteString}
+    
+    var url: URL? {
+        if isFileURL {
+            return self;
+        }
+        if host == nil {
+            return nil;
+        }
+        return self;
+    }
+}
+
+

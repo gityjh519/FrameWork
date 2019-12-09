@@ -8,47 +8,76 @@
 
 import UIKit
 
-enum DataBaseType: String {
-    case known
+//enum DataBaseManagerStringKey: String {
+//    case searchBibile
+//}
+protocol DataBaseManagerStringKey {
+    var valueString: String { get }
+}
+extension String: DataBaseManagerStringKey {
+    var valueString: String {
+        return self;
+    }
+}
+enum DataBaseKey: String, DataBaseManagerStringKey {
+    case loadMusicArray
+    
+    var valueString: String {
+        return rawValue;
+    }
 }
 
-class DataBaseManager: NSObject,NotificationActionDelegate {
+
+class DataBaseManager {
     
+    private static let instance = DataBaseManager();
+    private var paramter = [String: Any]();
+    private let lock = NSLock();
+    private init() {
+        NotificationCenter.default.addObserver(forName: UIApplication.didReceiveMemoryWarningNotification, object: nil, queue: nil) { (notificaion) in
+            self.paramter.removeAll();
+        };
+    }
+    static subscript(key: DataBaseManagerStringKey) -> Any? {
+        set {
+            instance[key.valueString] = newValue;
+        }
+        get {
+            return instance[key.valueString]
+        }
+    }
     
-    fileprivate static let instance = DataBaseManager();
-    private let paramter = NSMutableDictionary();
-    private let maxCount = 100;
-    private override init() {
-        super.init();
-        NotificationCenter.addTo(observer: self, name: UIApplication.didReceiveMemoryWarningNotification);
+    private subscript(key: DataBaseManagerStringKey) -> Any? {
+        set{
+            lock.lock();
+            paramter[key.valueString] = newValue;
+            lock.unlock();
+        }
+        get {
+            lock.lock();
+            let item = paramter[key.valueString];
+            lock.unlock();
+            return item;
+        }
         
     }
     
-    fileprivate subscript(key: DataBaseType) -> Any? {
-        set {
-            if paramter.count > maxCount {
-                paramter.removeAllObjects();
-            }
-            paramter[key.rawValue] = newValue;
-        }
-        get{
-            return paramter[key.rawValue];
-        }
+    private func removeKey(key: DataBaseManagerStringKey) -> Void {
+        lock.lock();
+        paramter.removeValue(forKey: key.valueString);
+        lock.unlock();
     }
-    
-    func noticationAction(_ notification: NSNotification) {
-        paramter.removeAllObjects();
-    }
-
 
 }
 
 extension DataBaseManager {
-    class func set(key: DataBaseType,value: Any) {
-        instance[key] = value;
+    class func set(key: DataBaseManagerStringKey,value: Any?) {
+        Self[key] = value;
     }
-    class func value(_ key: DataBaseType) -> Any? {
-        return instance[key];
+    class func value(_ key: DataBaseManagerStringKey) -> Any? {
+        return Self[key];
     }
-
+    class func removeKey(key: DataBaseManagerStringKey) -> Void {
+        instance.removeKey(key: key);
+    }
 }
